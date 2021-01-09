@@ -1,0 +1,16 @@
+$(document).ready(function(){
+	//dropdown
+	$(".aicon").mouseenter(function(){
+		$(".dropdown").css({"display":"block"});
+	});
+	$(".a").mouseleave(function(){
+		$(".dropdown").css({"display":"none"});
+	});
+	//sub-dropdown		
+	$(".bicon").hover(function(){
+		$(".sub-dropdown").show();
+	});
+	$(".b").mouseleave(function(){
+		$(".sub-dropdown").hide();
+	});
+});
